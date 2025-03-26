@@ -36,9 +36,20 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'daphne',
+    'channels',
     'django.contrib.staticfiles',
     'main'
 ]
+
+# Define ASGI application (instead of WSGI)
+ASGI_APPLICATION = "emoXplore.asgi.application"
+
+CHANNEL_LAYERS = {
+    "default": {
+        "BACKEND": "channels.layers.InMemoryChannelLayer",  # Uses memory for communication
+    },
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

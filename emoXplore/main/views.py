@@ -115,3 +115,5 @@ def contact(request):
 
     return render(request, "core/contact.html")
 
+def chat_view(request):
+    return render(request, "main/chat.html")  # Ensure chat.html exists inside templates
