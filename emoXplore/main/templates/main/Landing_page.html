@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Slider</title>
+        <link rel="stylesheet" href="{% static 'styles/new.css' %}" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="">Home</a>
+                <a href="">Contact</a>
+                <a href="">Info</a>
+            </nav>
+        </header>
+
+        <div class="carousel">
+            <!-- list items -->
+            <div class="list">
+                {% for place in places %}
+                <div class="item">
+                    <img src="{{place.image}}" />
+                    <div class="content">
+                        <div class="main">
+                                <div class="title">{{ place.name }} </div>
+                                <div class="location">
+                                    <a
+                                        href= "{{ place.loc }}"
+                                        style="text-decoration: none;"    
+                                    >
+                                        <img src="{% static 'image/demo/map.png' %}" />
+                                    </a>
+                                </div>
+                        </div>
+                        <div class="des">{{ place.desc }}</div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+            <!-- list thumnail -->
+            <div class="thumbnail">
+                {% for place in places %}
+                <div class="item">
+                    <img src="{{ place.image }}" />
+                    <div class="content">
+                        <div class="title">{{place.name}}</div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+            <!-- next prev -->
+            <div class="arrows">
+                <button id="prev"><</button>
+                <button id="next">></button>
+            </div>
+            <!-- time running -->
+            <div class="time"></div>
+        </div>
+
+        <script src="{% static 'new.js' %}"></script>
+    </body>
+</html>

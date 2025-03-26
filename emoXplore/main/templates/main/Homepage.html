@@ -1,0 +1,377 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Choose</title>
+        <link rel="icon" type="image/x-icon" href="" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="{% static 'styles/choice.css' %}"
+        />
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <span class="company-name">Emo-Xplore</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#pick">Choose</a></li>
+                    {% comment %} <li><a href="#about">About us</a></li> {% endcomment %}
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div style="display: flex; flex-direction: row">
+            <div style="flex: 1">
+                {% comment %}
+                <div class="head">
+                    <img
+                        src="{% static '/image/choose_page/plane_logo.png' %}"
+                        alt="my logo"
+                    />
+                    <p class="toptxt">Let's go around the world</p>
+                </div>
+                {% endcomment %}
+
+                <div class="main_heading">
+                    <p class="main_h1">
+                        Our model suggests <br />
+                        you're in :<br /><span
+                            style="font-size: 65px; color: rgb(255, 255, 255)"
+                        >
+                            {% if emotion %} {{ emotion }} {% else %}
+                            Detecting<span id="loader-dots"></span>{% endif %}
+                        </span>
+                    </p>
+                </div>
+                <div>
+                    <p class="sub">
+                        {% if data %} {{ data.intro_message }} {% else %}
+                        Celebrate your joy with vibrant travel experiences
+                        across Kozhikode! {% endif %}
+                    </p>
+                </div>
+            </div>
+
+            <div style="flex: 1; padding-left: 150px; margin-top: 50px">
+                <!-- <div id="normal-div">
+                    <img
+                        src="{% static 'image/choose_page/' %}"
+                        alt="my image"
+                        height="400px"
+                    />
+                </div> -->
+                <div id="cam-div" style="display: none">
+                    <!-- Video element to display webcam -->
+                    <video
+                        id="webcam"
+                        autoplay
+                        width="640"
+                        height="480"
+                    ></video>
+
+                    <!-- Canvas to display captured image -->
+                    <canvas
+                        id="canvas"
+                        width="640"
+                        height="480"
+                        style="display: none"
+                    ></canvas>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div id="start-webcam-button" style="display: block">
+                <button class="web-button">
+                    <img
+                        src="{% static 'image/choose_page/camera-solid.svg' %}"
+                        alt="Camera Icon"
+                        class="icon"
+                    />
+                    Start webcam
+                </button>
+            </div>
+            <div id="capture-webcam-button" style="display: none">
+                <form method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <input type="hidden" name="imageData" id="imageData" />
+                    <button class="web-button">
+                        <img
+                            src="{% static 'image/choose_page/camera-solid.svg' %}"
+                            alt="Camera Icon"
+                            class="icon"
+                        />
+                        Capture Image
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        {% if error_message %}
+        <script>
+            alert("{{ error_message|escapejs }}");
+        </script>
+        {% endif %}
+
+        <div class="card-container">
+            {%if data %} {% for category in data.categories %}
+            <!-- Card 1 -->
+            <a
+                href="{% url 'landing' %}?emotion={{emotion}}&category={{category.name}}"
+                style="text-decoration: none"
+            >
+                <div
+                    class="card"
+                    style="background-image: url({{category.image}});"
+                >
+                    <div class="card-name"><h4>{{category.name}}</h4></div>
+                </div>
+            </a>
+            {% endfor %} {% else %}
+            <!-- Card 1 -->
+            <div class="card">
+                <div class="icon-wrapper">
+                    <img
+                        src="{% static 'image/home/loading1.gif' %}"
+                        alt="load"
+                        class="loading"
+                    />
+                </div>
+                <h3>Loading...</h3>
+            </div>
+            <!-- Card 2 -->
+            <div class="card">
+                <div class="icon-wrapper">
+                    <img
+                        src="{%static 'image/home/loading1.gif' %}"
+                        alt="load"
+                        class="loading"
+                    />
+                </div>
+                <h3>Loading...</h3>
+            </div>
+            <!-- Card 3 -->
+            <div class="card">
+                <div class="icon-wrapper">
+                    <img
+                        src="{% static 'image/home/loading1.gif' %}"
+                        alt="load"
+                        class="loading"
+                    />
+                </div>
+                <h3>Loading...</h3>
+            </div>
+            <!-- Card 4 -->
+            <div class="card">
+                <div class="icon-wrapper">
+                    <img
+                        src="{% static 'image/home/loading1.gif' %}"
+                        alt="load"
+                        class="loading"
+                    />
+                </div>
+                <h3>Loading...</h3>
+            </div>
+            <!-- Card 5 -->
+            <div class="card">
+                <div class="icon-wrapper">
+                    <img
+                        src="{% static 'image/home/loading1.gif' %}"
+                        alt="load"
+                        class="loading"
+                    />
+                </div>
+                <h3>Loading...</h3>
+            </div>
+            {% endif %}
+        </div>
+
+        <!-- manually choose place section -->
+        <div id="pick">
+            <div class="card-container">
+                <div
+                    class="place-card"
+                    style="
+                        background-image: url('{% static 'image/place/k-beach.jpg' %}');
+                    "
+                >
+                    <div class="card-name" style="color: white;"><h4>Kozhikode Beach</h4></div>
+                    <!-- <img
+                    src="images/place/back.jpg"
+                    alt="load"
+                    class="loading"
+                /> -->
+                </div>
+                <!-- Card 2 -->
+                <div
+                    class="place-card"
+                    style="
+                        background-image: url('{% static 'image/place/thusharagiri waterfalls.jpg' %}');
+                    "
+                >
+                    <div class="card-name" style="color: white;">
+                        <h4>Thusharagiri waterfalls</h4>
+                    </div>
+                    <!-- <img
+                    src="images/place/k-beach.jpg"
+                    alt="load"
+                    class="loading"
+                /> -->
+                </div>
+                <!-- Card 3 -->
+                <div
+                    class="place-card"
+                    style="
+                        background-image: url('{% static 'image/place/mananchira.webp' %}');
+                    "
+                >
+                    <div class="card-name" style="color: white;"><h4>Mananchira</h4></div>
+                    <!-- <img
+                    src="images/place/mananchira.webp"
+                    alt="load"
+                    class="loading"
+                /> -->
+                </div>
+                <!-- Card 4 -->
+                <div
+                    class="place-card"
+                    style="
+                        background-image: url('{% static 'image/place/back.jpg' %}');
+                    "
+                >
+                    <div class="card-name" style="color: white;"><h4>Kalai river</h4></div>
+                    <!-- <img
+                    src="images/place/thusharagiri waterfalls.jpg"
+                    alt="load"
+                    class="loading"
+                /> -->
+                </div>
+                <!-- Card 5 -->
+                <div
+                    class="place-card"
+                    style="
+                        background-image: url('{% static 'image/place/k-beach.jpg' %}');
+                    "
+                >
+                    <div class="card-name" style="color: white;"><h4>Kozhikode Beach</h4></div>
+                    <!-- <img
+                    src="images/place/k-beach.jpg"
+                    alt="load"
+                    class="loading"
+                /> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+
+        <div class="contact-section" id="contact">
+            <div class="contact-item">
+                <img src="{% static 'image/icon/loc.png' %}" alt="Find Us" />
+                <div>
+                    <h3>FIND US</h3>
+                    <p>Kmctce<br />Kallanthode, Kozhikode</p>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <img src="{% static 'image/icon/call.png' %}" alt="Call Us" />
+                <div>
+                    <h3>CALL US</h3>
+                    <p>+91 1234567890</p>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <button id="openModalBtn">
+                    <img
+                        src="{% static 'image/icon/email.png' %}"
+                        alt="Email Us"
+                    />
+                    <h3>Suggestions?</h3>
+                </button>
+            </div>
+
+            <div class="contact-item">
+                <div class="social-icons">
+                    <a
+                        target="_blank"
+                        href="https://www.facebook.com/adhun.e.3"
+                    >
+                        <button class="fb">
+                            <img
+                                src="{% static 'image/icon/fb.png' %}"
+                                alt="Facebook"
+                            />
+                        </button>
+                    </a>
+                    <a
+                        target="_blank"
+                        href="https://www.instagram.com/__adhu__n__/"
+                    >
+                        <button class="fb">
+                            <img
+                                src="{% static 'image/icon/social.png' %}"
+                                alt="Instagram"
+                            />
+                        </button>
+                    </a>
+                </div>
+                <div>
+                    <h3>FOLLOW US</h3>
+                    <p>Be Inspired</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <h2>Suggestions</h2>
+                <form action="{% url 'contact' %}" method="POST" id="form">
+                    {% csrf_token %}
+                    <label>Name</label>
+                    <input
+                        type="text"
+                        name="name"
+                        placeholder="Enter your name"
+                    />
+
+                    <label>Email</label>
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Enter your email"
+                    />
+
+                    <label>Suggestion</label>
+                    <textarea
+                        name="suggestion"
+                        placeholder="write any suggestions..."
+                    ></textarea>
+
+                    <div class="buttons">
+                        <button type="button" id="cancelBtn">Cancel</button>
+                        <button type="submit">send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+    <script src="{% static 'script.js' %}"></script>
+</html>

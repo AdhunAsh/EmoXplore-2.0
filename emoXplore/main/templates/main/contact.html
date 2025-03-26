@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+            color: black;
+        }
+
+        button {
+            border: none;
+            padding: 10px;
+            border-radius: 30%;
+            background-color: red;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <h1> E-mail sent !!! </h1>
+    <button onclick="go_back()">HOME </button>
+
+    <script>
+        function go_back() {
+            window.location.href = "{% url 'home' %}";
+        }
+    </script>
+</body>
+</html>
