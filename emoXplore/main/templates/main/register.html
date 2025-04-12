@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Register Modal</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        />
+        <link rel="stylesheet" href="{% static 'styles/login.css'%}" />
+    </head>
+    <body>
+        <div class="container">
+            {% if messages %}
+                <script>
+                    {% for message in messages %}
+                        alert("{{ message }}");
+                    {% endfor %}
+                </script>
+            {% endif %}
+        </div>
+
+        <!-- Register Modal -->
+        <div class="modal" id="registerModal">
+            <div class="modal-content">
+                <h2>Register</h2>
+                <p>
+                    Already have an account?
+                    <a
+                        href="{% url 'login' %}"
+                        style="color: #3498db; text-decoration: none"
+                        >Login here</a
+                    >
+                </p>
+                <form method="post" action="{% url 'register' %}">
+                    {% csrf_token %}
+                    <input
+                        type="text"
+                        class="input-field"
+                        placeholder="Username"
+                        name="username"
+                    />
+                    <input
+                        type="#email"
+                        class="input-field"
+                        placeholder="Email"
+                        name="email"
+                    />
+                    <input
+                        type="password"
+                        class="input-field"
+                        placeholder="Enter Password"
+                        name="password1"
+                    />
+                    <input
+                        type="password"
+                        class="input-field"
+                        placeholder="Confirm Password"
+                        name="password2"
+                    />
+                    <button type="submit" class="login-btn">Sign Up</button>
+                </form>
+            </div>
+        </div>
+        {% comment %}
+
+        <script>
+            function openRegisterModal() {
+                document.getElementById('loginModal').style.display = 'none';
+                document.getElementById('registerModal').style.display = 'flex';
+            }
+
+            function openLoginModal() {
+                document.getElementById('registerModal').style.display = 'none';
+                document.getElementById('loginModal').style.display = 'flex';
+            } {% endcomment %}
+        </script>
+    </body>
+</html>

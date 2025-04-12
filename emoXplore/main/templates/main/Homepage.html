@@ -17,6 +17,15 @@
             type="text/css"
             href="{% static 'styles/choice.css' %}"
         />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="{% static 'styles/community.css' %}"
+        />
+        <script src="https://unpkg.com/htmx.org/dist/htmx.js"></script>
+        <script src="https://unpkg.com/htmx.org/dist/ext/ws.js"></script>
+        <script src="https://unpkg.com/hyperscript.org@0.9.14"></script>
+        <script src="https://unpkg.com/htmx.org@1.9.10"></script>
     </head>
     <body>
         <header>
@@ -27,11 +36,68 @@
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#pick">Choose</a></li>
-                    {% comment %} <li><a href="#about">About us</a></li> {% endcomment %}
+                    <li>
+                        <a href="#" id="community-btn"
+                            >community group</a
+                        >
+                    </li>
                     <li><a href="#contact">Contact</a></li>
+                    <li><a href="{% url 'login' %}">Logout</a></li>
                 </ul>
             </nav>
         </header>
+
+        <!-- Community Group Popup -->
+        <div id="community-popup" class="popup">
+            <div class="popup-header" id="popup-header">
+                <span>Hey Explorers..!</span>
+                <button id="close-popup">&times;</button>
+            </div>
+            <div class="chat-contents" id="messages-container">
+                <div class="disclaimer">
+                    ⓘ Be friendly and Don't abuse the chat
+                </div>
+                <div class="chat-content" id="chat-content-messages">
+                    <div
+                        class="messages-list"
+                        id="chat_messages"
+                        hx-on::after-settle="scrollToBottom()"
+                        hx-on:after-request="scrollToBottom()"
+                    >
+                        {% include 'main/chat.html' %}
+                    </div>
+                </div>
+            </div>
+            <div class="chat-input">
+                <form
+                    id="chat-input-field"
+                    hx-ext="ws"
+                    ws-connect="/ws/chatroom/Hey_Explorers"
+                    ws-send
+                    _="on htmx:wsAfterSend reset() me"
+                >
+                    {% csrf_token %} {{ form.body }}
+                </form>
+                <form
+                    id="chat-field-form"
+                    enctype="multipart/form-data"
+                    hx-post="{% url 'file_upload' %}"
+                    hx-target="#chat_messages"
+                    hx-encoding="multipart/form-data"
+                    hx-swap="beforeend"
+                    _="on htmx:wsAfterSend reset() me"
+                >
+                    {% csrf_token %}
+                    <label for="file-upload" class="upload-icon">
+                        <img src="{% static 'image/icon/clip.png' %}" />
+                    </label>
+                    <input type="file" name="file" id="file-upload" />
+                    <button type="submit" id="send-btn">
+                        <img src="{% static 'image/icon/send.png' %}" />
+                    </button>
+                </form>
+            </div>
+        </div>
 
         <div style="display: flex; flex-direction: row">
             <div style="flex: 1">
@@ -207,7 +273,9 @@
                         background-image: url('{% static 'image/place/k-beach.jpg' %}');
                     "
                 >
-                    <div class="card-name" style="color: white;"><h4>Kozhikode Beach</h4></div>
+                    <div class="card-name" style="color: white">
+                        <h4>Kozhikode Beach</h4>
+                    </div>
                     <!-- <img
                     src="images/place/back.jpg"
                     alt="load"
@@ -218,10 +286,10 @@
                 <div
                     class="place-card"
                     style="
-                        background-image: url('{% static 'image/place/thusharagiri waterfalls.jpg' %}');
+                        background-image: url('{% static 'image/place/thusharagiriwaterfalls.jpg' %}');
                     "
                 >
-                    <div class="card-name" style="color: white;">
+                    <div class="card-name" style="color: white">
                         <h4>Thusharagiri waterfalls</h4>
                     </div>
                     <!-- <img
@@ -237,7 +305,9 @@
                         background-image: url('{% static 'image/place/mananchira.webp' %}');
                     "
                 >
-                    <div class="card-name" style="color: white;"><h4>Mananchira</h4></div>
+                    <div class="card-name" style="color: white">
+                        <h4>Mananchira</h4>
+                    </div>
                     <!-- <img
                     src="images/place/mananchira.webp"
                     alt="load"
@@ -251,7 +321,9 @@
                         background-image: url('{% static 'image/place/back.jpg' %}');
                     "
                 >
-                    <div class="card-name" style="color: white;"><h4>Kalai river</h4></div>
+                    <div class="card-name" style="color: white">
+                        <h4>Kalai river</h4>
+                    </div>
                     <!-- <img
                     src="images/place/thusharagiri waterfalls.jpg"
                     alt="load"
@@ -265,7 +337,9 @@
                         background-image: url('{% static 'image/place/k-beach.jpg' %}');
                     "
                 >
-                    <div class="card-name" style="color: white;"><h4>Kozhikode Beach</h4></div>
+                    <div class="card-name" style="color: white">
+                        <h4>Kozhikode Beach</h4>
+                    </div>
                     <!-- <img
                     src="images/place/k-beach.jpg"
                     alt="load"
@@ -373,5 +447,6 @@
             </div>
         </div>
     </body>
-    <script src="{% static 'script.js' %}"></script>
+    <script src="{% static 'script.js ' %}" defer ></script>
+    
 </html>

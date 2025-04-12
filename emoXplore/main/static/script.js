@@ -123,3 +123,65 @@ setInterval(() => {
     detectNode.innerText = ".".repeat(detectLoaderDots);
     detectLoaderDots = (detectLoaderDots + 1) % 4;
 }, 1000);
+
+//for community group
+document.addEventListener("DOMContentLoaded", function () {
+    const communityBtn = document.getElementById("community-btn");
+    const communityPopup = document.getElementById("community-popup");
+    const closePopup = document.getElementById("close-popup");
+
+    if (communityBtn && communityPopup) {
+        communityBtn.addEventListener("click", function (event) {
+            event.preventDefault();  // prevent default anchor behavior
+            communityPopup.style.display = "flex";  // show chat
+            // call scrollToBottOm after opening the chat
+            setTimeout(scrollToBottom, 100);
+        });
+    }
+
+    if (closePopup) {
+        closePopup.addEventListener("click", function () {
+            communityPopup.style.display = "none";
+        });
+    }
+
+     // ✅ Send message when pressing Enter key
+     if (messageInput && sendBtn) {
+        messageInput.addEventListener("keypress", function (e) {
+            if (e.key === "Enter" && !e.shiftKey) {  
+                e.preventDefault();  // Prevent new line in input field
+                sendBtn.click();  // Trigger send button click
+            }
+        });
+    }
+});
+
+
+function scrollToBottom() {
+    setTimeout(() => {
+        let messagesContainer = document.getElementById(
+            "chat-content-messages"
+        );
+        if (messagesContainer) {
+            messagesContainer.style.overflowY = "auto"; // Ensure scrolling is allowed
+            messagesContainer.scrollTop =
+                messagesContainer.scrollHeight;
+        }
+    }, 300); // Delay to ensure messages load before scrolling
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    scrollToBottom(); // Scroll when page loads
+
+    // Detect new messages and scroll
+    let messagesContainer = document.getElementById(
+        "chat-content-messages"
+    );
+    if (messagesContainer) {
+        const observer = new MutationObserver(scrollToBottom);
+        observer.observe(messagesContainer, {
+            childList: true,
+            subtree: true,
+        });
+    }
+});

@@ -1,38 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>WebSocket Chat</title>
-</head>
-<body>
-    <h2>WebSocket Chat</h2>
-    <input id="message" type="text" placeholder="Type a message...">
-    <button onclick="sendMessage()">Send</button>
-    <ul id="messages"></ul>
+{% for message in chat_messages %}
+    {% include 'main/chat_message.html' %}
+{% endfor %}
 
-    <script>
-        // Create WebSocket connection
-        const socket = new WebSocket("ws://localhost:8000/ws/chat/");
+<script>
 
-        socket.onopen = function() {
-            console.log("WebSocket connected!");
-        };
+    function scrollToBottom(time=0) {
+        setTimeout(function() {
+            const container = document.getElementById('chat-content-messages');
+            container.scrollTop = container.scrollHeight;
+        }, time);
+    }
+    scrollToBottom()
 
-        socket.onmessage = function(event) {
-            let data = JSON.parse(event.data);
-            let li = document.createElement("li");
-            li.textContent = data.message;
-            document.getElementById("messages").appendChild(li);
-        };
-
-        function sendMessage() {
-            let messageInput = document.getElementById("message");
-            socket.send(JSON.stringify({ message: messageInput.value }));
-            messageInput.value = "";
-        }
-
-        socket.onclose = function() {
-            console.log("WebSocket disconnected");
-        };
-    </script>
-</body>
-</html>
+</script>

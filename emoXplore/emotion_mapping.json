@@ -1,0 +1,842 @@
+ {
+    "fear": {
+        "intro_message": "You seem to be in a relaxed mood. Here are some peaceful travel ideas across Kerala to help you unwind. Choose a category below to find a spot that suits your vibe.",
+        "categories": [
+            {
+                "name": "Nature Retreats",
+                "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_T1yN31rnlAUsD14XQP2Win7rbm2ecwykOw&s",
+                "options": [
+                    {
+                        "name": "Kariyathumpara",
+                        "description": "Kariyathumpara is a scenic hilltop located in the Kozhikode district of Kerala. It is known for its serene environment and beautiful natural surroundings, offering a peaceful escape from the hustle and bustle of city life. The area is characterized by lush greenery, rolling hills, and expansive views of the surrounding landscapes, making it a popular destination for nature lovers, trekkers, and photographers.",
+                        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/7d/d5/38/aerial-view-of-kariyathumpara.jpg?w=1400&h=-1&s=1",
+                        "location": "https://maps.app.goo.gl/V2eaCDqsxdKtXC3J8"
+                    },
+                    {
+                        "name": "Kozhippara Waterfalls",
+                        "description": "Kozhippara Waterfalls is a beautiful and serene waterfall located in the Kozhikode district of Kerala, India. Nestled amidst dense greenery, the falls is a popular tourist destination for nature lovers and adventure enthusiasts. The waterfall is known for its refreshing and cool waters, cascading down from a height into a crystal-clear pool below, surrounded by lush forests and hills.",
+                        "image": "https://www.dtpcmalappuram.com/uploads/picture_gallery/gallery_images/kozhippara-waterfall-malappuram-17-20230403141731876117.webp",
+                        "location": "https://maps.app.goo.gl/A3u9hrUSXdiDQsRm6"
+                    },
+                    {
+                        "name": "Kakkadampoyil",
+                        "description": "Kakkadampoyil is a picturesque village located in the Kozhikode district of Kerala, known for its scenic beauty and tranquil atmosphere. Situated in the Western Ghats, this place is famous for its lush green landscapes, rolling hills, and dense forests. It is an ideal destination for nature lovers and those seeking a peaceful retreat away from the hustle and bustle of urban life.",
+                        "image": "images/chembra_peak.jpg",
+                        "location": "https://maps.app.goo.gl/Z3NQUFE7fJGJ3X849"
+                    },
+                    {
+                        "name": "Aripara Waterfalls",
+                        "description": "Arippara Waterfalls is a stunning natural attraction located in the Kozhikode district of Kerala, India. The waterfall is nestled amidst lush greenery and is known for its picturesque beauty, making it a popular spot for nature lovers and adventure seekers. The waterfall cascades down from a considerable height, creating a serene and peaceful atmosphere, perfect for a relaxing visit.",
+                        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/6d/26/ee/arippara-waterfalls.jpg?w=900&h=-1&s=1",
+                        "location": "https://maps.app.goo.gl/DVahFePgK8E1CudL6"
+                    }
+                ]
+            },
+            {
+                "name": "Beach Getaways",
+                "image": "https://static.toiimg.com/thumb/48538866.cms?resizemode=75&width=1200&height=900",
+                "options": [
+                    {
+                        "name": "Kozhikode Beach",
+                        "description": "The beach is renowned for its tranquil charm, with breathtaking sunset views that paint the sky in vivid shades of orange and pink. Gentle waves and a refreshing sea breeze create a peaceful ambiance, making it a favorite spot for leisurely walks, picnics, and unwinding from the city's bustle.",
+                        "image": "https://images.unsplash.com/photo-1654673285799-272434e0ef00?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                        "location": "https://maps.app.goo.gl/Y1GCSfFvhprRu2Gp7"
+                    },
+                    {
+                        "name": "Kappad Beach",
+                        "description": "The beach wher Vasco Da Gama landed in 1498, making the begining of the spice trade in kerala.jIt is less crowded and perfect for a relaxing day by th sea.",
+                        "image": "https://www.dtpckozhikode.com/uploads/picture_gallery/gallery_images/kappad-beach-park-kozhikodu-20230602163015499265.webp",
+                        "location": "https://maps.app.goo.gl/tNAbev3xyydestqU6"
+                    },
+                    {
+                        "name": "chaliyam Beach",
+                        "description": "Chaliyam Beach is a serene and less crowded coastal destination located in the Kozhikode district of Kerala, India. Known for its natural beauty, the beach offers a peaceful atmosphere, making it ideal for relaxation",
+                        "image": "https://indiano.travel/wp-content/uploads/2024/11/Chaliyam-Beach-2.jpg",
+                        "location": "https://maps.app.goo.gl/j3NSGab7foGoQuU59"
+                    },
+                    {
+                        "name": "Payyoli Beach",
+                        "description": "Payyoli Beach is a beautiful and relatively quiet beach located in the Kozhikode district of Kerala, India. Known for its golden sands and clear blue waters, it offers a peaceful escape from the more crowded beaches of Kerala",
+                        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLhRFv8AvQU4sR25ggcqchlDuHHK1Ej92PGg&s",
+                        "location": "https://maps.app.goo.gl/RHvAEBYauDQ32JWn9"
+                    }
+                ]
+            },
+            {
+                "name": "Scenic Hill Stations",
+                "image": "https://flycnn.com/wp-content/uploads/2024/05/vayalada_kozhikode-1024x576.webp",
+                "options": [
+                    {
+                        "name": "Ponkunnu Hill Station",
+                        "description": "Ponkunnu Hill Station is located in the Kozhikode district of Kerala, India, and is known for its serene beauty and panoramic views.",
+                        "image": "https://cdn2.advanceinfotech.org/kozhikode.directory/1200x675/business/1380/ponkunnu-hill-base-3-1645856430.webp",
+                        "location": "https://maps.app.goo.gl/4rTHdo7zaEpNa8NG7"
+                    },
+                    {
+                        "name": "Palazhi Mountain View Point",
+                        "description": "Palazhi Mountain View Point is a scenic spot located in the Kozhikode district of Kerala, offering breathtaking views of the surrounding landscapes",
+                        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxKOEpKQEgIYpQaYuh2oXvy1TyiWuKS0JDbQ&s",
+                        "location": "https://maps.app.goo.gl/Y5qqBPQdFD6NWQTa9"
+                    },
+                    {
+                        "name": "Ponparakunnu View Point",
+                        "description": "Ponparakunnu offers a serene retreat in the early hours, enveloped in mist and fog with a breathtaking green panorama.",
+                        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpxr-pT4PhqDHCcUGu4dSTRfQZfTkXBVEjIg&s",
+                        "location": "https://maps.app.goo.gl/mL2RpfC3zDe9UMj8A"
+                    },
+                    {
+                        "name": "Vayalada View Point",
+                        "description": "Vayalada Viewpoint in Kozhikode offers stunning hilltop views of the Western Ghats and surrounding valleys, making it a perfect spot for nature lovers.",
+                        "image": "https://flycnn.com/wp-content/uploads/2024/05/vayalada_kozhikode-1024x576.webp",
+                        "location": "https://maps.app.goo.gl/jpucPMhCCfzweWSd8"
+                    }
+                ]
+            },
+            {
+                "name": "Wildlife and Bird Watching",
+                "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsXOC23sDJqhyBidJztPh8lZgxrT-Og3Xbsg&s",
+                "options": [
+                    {
+                        "name": "Kadalundi Bird Sanctuary",
+                        "description": "Ideal for bird enthusiasts, with a wide variety of species to observe.",
+                        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr4prmx98L2RKouBnSLLHn40y-xpr8n_CU5A&s",
+                        "location": "https://maps.app.goo.gl/jrgNPKSzeiEY5mVj8"
+                    },
+                    {
+                        "name": " Kadalundi Mangrove Forests",
+                        "description": "Mangrove forests are unique coastal ecosystems characterized by salt-tolerant trees and plants that thrive in brackish water.",
+                        "image": "https://cdn2.advanceinfotech.org/kozhikode.directory/1200x675/business/1356/kadalundi-mangroves-eco-tourism1-1645679056.webp",
+                        "location": "https://maps.app.goo.gl/fy9YTqAHx6jFZfzq8"
+                    },
+                    {
+                        "name": "Kakkayam",
+                        "description": "A serene eco-tourism spot with a dam, waterfalls, trekking trails, and rich biodiversity, offering a tranquil retreat for nature lovers and adventure seekers",
+                        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsXOC23sDJqhyBidJztPh8lZgxrT-Og3Xbsg&s",
+                        "location": "https://maps.app.goo.gl/nVPeep7PhxGD7VUh6"
+                    },
+                    {
+                        "name": "Vanaparvam Biodiversity Park",
+                        "description":"This biodiversity park is dedicated to preserving the region's rich flora and fauna.",
+                        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfIu9cYoDvmS6w2Lb_DVWOFyyOWs4xyKAp-Q&s",
+                        "location": "https://maps.app.goo.gl/rW8xrTyg9U7boqYc7"
+                    }
+                ]
+            },
+            {
+                "name": "Spiritual and Heritage Spots",
+                "image": "https://www.savaari.com/blog/wp-content/uploads/2024/03/elephants-in-thrissur-pooram.webp",
+                "options": [
+                    {
+                        "name": "Freedom Squre Kozhikode",
+                        "description": "Freedom square is one of learning, sharing, caring, one which will foster higher civic sense and create an everlasting identity for a city. It is a space of togetherness, of celebration, of reminiscence and of immense pride.",
+                        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlZ9C-Q34PymKsJtzq-3NvD477WMDsrcpD0Q&s",
+                        "location": "https://maps.app.goo.gl/NDs231zF7JrPn9M4A"
+                    },
+                    {
+                        "name": " Tali Mahadeva Temple",
+                        "description": "This ancient Shiva temple, located in the heart of Kozhikode, is one of the oldest and most venerated in Kerala, holding significant religious and historical importance. ",
+                        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/76/88/a4/img-20180904-074513-largejpg.jpg?w=1200&h=1200&s=1",
+                        "location": "https://maps.app.goo.gl/Sn4DsE5bhpJfQPph7"
+                    },
+                    {
+                        "name": "Pazhassi Raja Archaeological Museum",
+                        "description": "Is dedicated to preserving the region's rich historical and cultural heritage.",
+                        "image": "https://www.dtpckozhikode.com/uploads/picture_gallery/gallery_images/pazhassi_raja_museum_and_art_gallery-20230510150747488970.webp",
+                        "location": "https://maps.app.goo.gl/q4r6jaW1pt2nZXXb7"
+                    },
+                    {
+                        "name": "Mishkal Mosque",
+                        "description": "Mishkal mosque, the four-storeyed mosque situated in Kuttichira, has a history of more than 650 years. It is named after Nakhooda Mishkal, an Arab trader who built this structure.",
+                        "image": "https://www.dtpckozhikode.com/uploads/picture_gallery/gallery_images/mishkal-masjid-1920x1080-20230510150947112419.webp",
+                        "location": "https://maps.app.goo.gl/bDFE9FjEq1FT6PeTA"
+                    }
+                ]
+            }
+        ]
+    },
+    "surprise": {
+        "intro_message": "You're in an adventurous mood! Here are some thrilling travel spots in Kerala to get your adrenaline pumping. Choose a category below to find your next adventure!",
+        "categories": [
+            {
+                "name": "Trekking and Hiking",
+                "image": "https://www.responsiblevacation.com/imagesclient/8827_3460.jpg",
+                "options": [
+                    {
+                        "name": "Kakkayam Trek",
+                        "description":"The Kakkayam Trek is a popular trekking route located in the hills of Kerala, known for its scenic beauty and serene landscapes",
+                        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVnStdya3pFgra4JIFfTemlneH40umi49aQA&s",
+                        "location": "https://maps.app.goo.gl/tm9CfKMjresNqkpcA"
+                    },
+                    {
+                        "name": "Vellarimala",
+                        "description": "Vellarimala forms a part of a high hill range of what is otherwise known as Camel's Hump Mountains, a part of the Western Ghats.",
+                        "image": "https://www.dtpckozhikode.com/uploads/picture_gallery/gallery_images/vellarimala-20230509172234418149.webp",
+                        "location": "https://maps.app.goo.gl/WpVNewSXdREPusdG7"
+                    },
+                    {
+                        "name": "Thusharagiri Waterfall Trek",
+                        "description": "The Thusharagiri Waterfalls Trek is an exciting adventure through dense forests and rugged terrain, leading to the breathtaking Thusharagiri Waterfalls.",
+                        "image": "https://www.keralatourism.org/images/enchanting_kerala/large/thusharagiri20230608031615_1307_1.jpg",
+                        "location": "https://maps.app.goo.gl/NwqHkaSzVxSS8wrL7"
+                    },
+                    {
+                        "name": "Vayalada View Point",
+                        "description": "Vayalada Viewpoint in Kozhikode offers stunning hilltop views of the Western Ghats and surrounding valleys, making it a perfect spot for nature lovers.",
+                        "image": "https://flycnn.com/wp-content/uploads/2024/05/vayalada_kozhikode-1024x576.webp",
+                        "location": "https://maps.app.goo.gl/jpucPMhCCfzweWSd8"
+                    }
+                ]
+            },
+            {
+                "name": "Waterfalls and Rapids",
+                "image": "https://www.dtpcmalappuram.com/uploads/picture_gallery/gallery_images/kozhippara-waterfall-malappuram-17-20230403141731876117.webp",
+                "options": [
+                    {
+                        "name": "Thusharagiri Waterfalls",
+                        "description": "A beautiful waterfall located around 50km from kozhikode, offering scenic beauty and trekking opportunities.It's a popular spot for nature lovers and adventure seekers.",
+                        "image": "https://www.keralatourism.org/images/enchanting_kerala/large/thusharagiri20230608031615_1307_1.jpg",
+                        "location": "https://maps.app.goo.gl/NwqHkaSzVxSS8wrL7"
+                    },
+                    {
+                        "name": "Kozhippara Waterfalls",
+                        "description": "Kozhippara Waterfalls is a beautiful and serene waterfall located in the Kozhikode district of Kerala, India. Nestled amidst dense greenery, the falls is a popular tourist destination for nature lovers and adventure enthusiasts. The waterfall is known for its refreshing and cool waters, cascading down from a height into a crystal-clear pool below, surrounded by lush forests and hills.",
+                        "image": "https://www.dtpcmalappuram.com/uploads/picture_gallery/gallery_images/kozhippara-waterfall-malappuram-17-20230403141731876117.webp",
+                        "location": "https://maps.app.goo.gl/A3u9hrUSXdiDQsRm6"
+                    },
+                    {
+                        "name": "Urakkuzhi Warterfalls",
+                        "description": "Urakkuzhi Waterfalls is a beautiful natural spot known for its scenic beauty.",
+                        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf2zQBbnsjjXR92yrsnGBu2RBwE5ZJwDaK2Q&s",
+                        "location": "https://maps.app.goo.gl/eWqUuztYnyi1FAne7"
+                    },
+                    {
+                        "name": "Kozhippara Waterfalls",
+                        "description": "Kozhippara Waterfalls is a beautiful and serene waterfall located in the Kozhikode district of Kerala, India. Nestled amidst dense greenery, the falls is a popular tourist destination for nature lovers and adventure enthusiasts. The waterfall is known for its refreshing and cool waters, cascading down from a height into a crystal-clear pool below, surrounded by lush forests and hills.",
+                        "image": "https://www.dtpcmalappuram.com/uploads/picture_gallery/gallery_images/kozhippara-waterfall-malappuram-17-20230403141731876117.webp",
+                        "location": "https://maps.app.goo.gl/A3u9hrUSXdiDQsRm6"
+                    }
+                ]
+            },
+            {
+                "name": "Wildlife and Jungle Exploration",
+                "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn54zK4Jmk29bfv6-LTHRWdfL-KJCb0f934w&s",
+                "options": [
+                    {
+                        "name": " Kadalundi Mangrove Forests",
+                        "description": "Mangrove forests are coastal ecosystems that are found in tropical and subtropical regions, characterized by salt-tolerant trees and shrubs.",
+                        "image": "https://content3.jdmagicbox.com/comp/kozhikode/f7/0495px495.x495.170607185056.w7f7/catalogue/green-island-tourism-kadalundi-kadalundi-kozhikode-tourist-attraction-vcfbr55cwa.jpg",
+                        "location": "https://maps.app.goo.gl/We9RBM7SF4RM7cWU9"
+                    },
+                    {
+                        "name": "Mavoor wetlands",
+                        "description": "Mavoor Wetlands are a tranquil expanse of marshy lands that offer a peaceful retreat for nature enthusiasts.",
+                        "image": "https://indiano.travel/wp-content/uploads/2024/12/Mavoor-Wetlands.jpg",
+                        "location": "https://maps.app.goo.gl/scNLbk9G9prwsfiQ8"
+                    },
+                    {
+                        "name": "Sarovaram Biopark",
+                        "description": "is an eco-tourism destination dedicated to the conservation of wetlands and mangrove ecosystems.",
+                        "image": "https://www.dtpckozhikode.com/uploads/picture_gallery/gallery_images/water-museum-and-biopark-in-kozhikde-1-20230509172608669315.webp",
+                        "location": "https://maps.app.goo.gl/Eg1peXFC7gS1B4xU6"
+                    },
+                    {
+                        "name": "Janakikad Ecotourism",
+                        "description": "A lush 131-hectare forest near Kuttiyadi, offering ecotourism experiences with birdwatching, trekking, rafting, and a serene river, blending biodiversity with historical charm.",
+                        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn54zK4Jmk29bfv6-LTHRWdfL-KJCb0f934w&s",
+                        "location": "https://maps.app.goo.gl/JBTgM57wjSwQW2e48"
+                    }
+                ]
+            },
+            {
+                "name": "Adventure Sports",
+                "image": "https://imgcld.yatra.com/ytimages/image/upload/v1530881452/AdvNation/ANN_TRP727/11-min_BcIbrk.jpg",
+                "options": [
+                    {
+                        "name": "Iruvanjippuzha River Rafting",
+                        "description": "ruvazhanjippuzha, or Iruvanjipuzha, is a major tributary of River Chaliyar and joining to Chaliyar at Koolimadu near Cheruvadi.",
+                        "image": "https://imgcld.yatra.com/ytimages/image/upload/v1530881452/AdvNation/ANN_TRP727/11-min_BcIbrk.jpg",
+                        "location": "https://maps.app.goo.gl/UYDiSAMus1eASEMZ6"
+                    },
+                    {
+                        "name": "Elamaram Kayaking",
+                        "description": "offers kayaking experiences, potentially through 'The Pankayam Kayak Camp'. You can enjoy a serene riverside experience, with the possibility of sunset kayaking and iftar gatherings. ",
+                        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiBQOmflJkRnj89qFHQ4gAAUKSuRinWhEeAw&s",
+                        "location": "https://maps.app.goo.gl/Ae8cfH4od6ea21kt6"
+                    },
+                    {
+                        "name": "Jet Ski Kozhikode",
+                        "description": "The beach is renowned for its tranquil charm, with breathtaking sunset views that paint the sky in vivid shades of orange and pink. Gentle waves and a refreshing sea breeze create a peaceful ambiance, making it a favorite spot for leisurely walks, picnics, and unwinding from the city's bustle.",
+                        "image": "https://images.unsplash.com/photo-1654673285799-272434e0ef00?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                        "location": "https://maps.app.goo.gl/Y1GCSfFvhprRu2Gp7"
+                    },
+                    {
+                        "name": "Club Riveka Kayaking",
+                        "description": "immersive experiences that connect you with nature through riverfront stays and thrilling kayaking adventures on the Chaliyar River. .",
+                        "image": "https://trip2kerala.com/wp-content/uploads/2022/05/dharmadam-kayaking.jpeg",
+                        "location": "https://maps.app.goo.gl/sCPjfwWWTxiLprv76"
+                    }
+                ]
+            }
+        ]
+    },
+    "happy": {
+        "intro_message": "You seem to be in high spirits! Here are some cheerful travel suggestions across Kerala that align with your joyful  mood. Select a category below to explore!",
+        "categories": [
+            {
+                "name": "Cultural Experiences",
+                "image": "https://www.savaari.com/blog/wp-content/uploads/2024/03/elephants-in-thrissur-pooram.webp",
+                "options": [
+                    {
+                        "name": "Tali Urban Heritage Core",
+                        "description": "The Tali Urban Heritage Core is a cultural and historical precinct located in the heart of Kozhikode.",
+                        "image": "https://www.dtpckozhikode.com/uploads/picture_gallery/gallery_images/thali-temple-kozhikode-1920x1080-20230510151114632806.webp",
+                        "location": "https://maps.app.goo.gl/qoE4vCDi3TzDoUNaA"
+                    },
+                    {
+                        "name": "Freedom Squre Kozhikode",
+                        "description": "Freedom square is one of learning, sharing, caring, one which will foster higher civic sense and create an everlasting identity for a city. It is a space of togetherness, of celebration, of reminiscence and of immense pride.",
+                        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlZ9C-Q34PymKsJtzq-3NvD477WMDsrcpD0Q&s",
+                        "location": "https://maps.app.goo.gl/NDs231zF7JrPn9M4A"
+                    },
+                    {
+                        "name": "Planetarium",
+                        "description": "a theater or building with a domed ceiling where images of stars, planets, and other celestial objects are projected, simulating the night sky and providing educational and entertaining astronomy experiences.",
+                        "image": "https://rscpcalicut.org.in/img/BannerRSCP.jpg",
+                        "location": "https://maps.app.goo.gl/8vuUkrMynLfEYZvq9"
+                    },
+                    {
+                        "name": "Sargaalaya Kerala arts & Craft Village",
+                        "description": "The Crafts Design and Technology development centre, which provides training for craftsmen to learn new techniques in traditional handicrafts.",
+                        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa7YepstfTBgZzmZlqxkNtuWCG3RLn_Vy3oA&s",
+                        "location": "https://maps.app.goo.gl/Byeko7AA8dhcEydh8"
+                    }
+                ]
+            },
+            {
+                "name": "Family-Friendly Spots",
+                "image": "https://www.justahotels.com/wp-content/uploads/2023/10/Family-Holiday-Destinations-in-India.jpg",
+                "options": [
+                    {
+                        "name": "Kozhikode Beach",
+                        "description": "The beach is renowned for its tranquil charm, with breathtaking sunset views that paint the sky in vivid shades of orange and pink. Gentle waves and a refreshing sea breeze create a peaceful ambiance, making it a favorite spot for leisurely walks, picnics, and unwinding from the city's bustle.",
+                        "image": "https://images.unsplash.com/photo-1654673285799-272434e0ef00?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                        "location": "https://maps.app.goo.gl/Y1GCSfFvhprRu2Gp7"
+                    },
+                    {
+                        "name": "Mananchira Square",
+                        "description": "A historic square in the heart of kozhikode city, with a large pond and surounding gardens.It is perfect for a peaceful walk or a picnic.",
+                        "image": "https://www.dtpckozhikode.com/uploads/picture_gallery/gallery_images/mananchira-20230509170414337277.webp",
+                        "location": "https://maps.app.goo.gl/XTXCBcb1bCvWrppz6"
+                    },
+                    {
+                        "name": "Snow Fantasy calicut",
+                        "description": "A great educational experience for kids and families.",
+                        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/97/60/3d/snow-love.jpg?w=1200&h=-1&s=1",
+                        "location": "https://maps.app.goo.gl/dRsnqcLTYGYWVxnL6"
+                    },
+                    {
+                        "name": "Kariyathumpara",
+                        "description": "Kariyathumpara is a scenic hilltop located in the Kozhikode district of Kerala. It is known for its serene environment and beautiful natural surroundings, offering a peaceful escape from the hustle and bustle of city life. The area is characterized by lush greenery, rolling hills, and expansive views of the surrounding landscapes, making it a popular destination for nature lovers, trekkers, and photographers.",
+                        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/7d/d5/38/aerial-view-of-kariyathumpara.jpg?w=1400&h=-1&s=1",
+                        "location": "https://maps.app.goo.gl/V2eaCDqsxdKtXC3J8"
+                    }
+                ]
+            },
+            {
+                "name": "Beach Escapes",
+                "image": "https://static.toiimg.com/thumb/48538866.cms?resizemode=75&width=1200&height=900",
+                "options": [
+                    {
+                        "name": "Beypore Beach",
+                        "description": "Known for its golden sand, vibrant sunsets, and relaxed vibe.",
+                        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtFCTMuxv2WnXsdOXeuzjthR02sjQ3Pt1p1A&s",
+                        "location": "https://maps.app.goo.gl/QNiBYUqzW5FaKUpn8"
+                    },
+                    {
+                        "name": "Kappad Beach",
+                        "description": "The beach wher Vasco Da Gama landed in 1498, making the begining of the spice trade in kerala.jIt is less crowded and perfect for a relaxing day by th sea.",
+                        "image": "https://www.dtpckozhikode.com/uploads/picture_gallery/gallery_images/kappad-beach-park-kozhikodu-20230602163015499265.webp",
+                        "location": "https://maps.app.goo.gl/tNAbev3xyydestqU6"
+                    },
+                    {
+                        "name": "Kozhikode Beach",
+                        "description": "The beach is renowned for its tranquil charm, with breathtaking sunset views that paint the sky in vivid shades of orange and pink. Gentle waves and a refreshing sea breeze create a peaceful ambiance, making it a favorite spot for leisurely walks, picnics, and unwinding from the city's bustle.",
+                        "image": "https://images.unsplash.com/photo-1654673285799-272434e0ef00?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                        "location": "https://maps.app.goo.gl/Y1GCSfFvhprRu2Gp7"
+                    },
+                    {
+                        "name": "Chaliyam Beach",
+                        "description": "Chaliyam Beach, located opposite Beypore port in Kozhikode, Kerala, is a serene and picturesque beach known for its calm atmosphere, breathtaking sunsets, and opportunities for relaxation and rejuvenation.",
+                        "image": "https://www.keralatourism.org/_next/image/?url=http%3A%2F%2F127.0.0.1%2Fktadmin%2Fimg%2Fpages%2Flarge-desktop%2Fchaliyam-beach-kozhikode-1727360170_563c3388dfa471a245df.webp&w=1920&q=75",
+                        "location": "https://maps.app.goo.gl/KCz3CQeaQZX9M6bD9"
+                    }
+                ]
+            },
+            {
+                "name": "Shopping and Markets",
+                "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKvd3CsWPoPsOvZG-w79nMBxcxe1IH96Gu1A&s",
+                "options": [
+                    {
+                        "name": "SM street",
+                        "description": "Discover antiques, spices, and unique souvenirs in a historic setting.",
+                        "image": "https://i.ytimg.com/vi/tsofWBOh5aA/maxresdefault.jpgimages/chembra_peak.jpg",
+                        "location": " "
+                    },
+                    {
+                        "name": "Gokulam Galleria",
+                        "description": "A bustling market with a mix of traditional and modern shopping options.",
+                        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgBeavN6OsHwYffqcdhSo9apOaaVwQrpEg2w&s",
+                        "location": " "
+                    },
+                    {
+                        "name": "Lulu Mall Kozhikode",
+                        "description": "One of India's largest malls with shopping, dining, and entertainment.",
+                        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1agcnb--LZQllZWnB1T1zCirheyCVsTYDtA&s",
+                        "location": " "
+                    },
+                    {
+                        "name": "Hi-Lite Mall",
+                        "description": "Explore this vibrant market for spices, textiles, and fresh produce.",
+                        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiVF_-MAl19ufS7uz41m7zpP6kXlpg0Z5hhA&s",
+                        "location": " "
+                    }
+                ]
+            },
+            {
+                "name": "Festivals and Celebrations",
+                "image": "https://www.savaari.com/blog/wp-content/uploads/2024/03/elephants-in-thrissur-pooram.webp",
+                "options": [
+                    {
+                        "name": "Onam Celebrations",
+                        "description": "Experience the spirit of Kerala's harvest festival with floral carpets and feasts.",
+                        "image": "images/chembra_peak.jpg",
+                        "location": " "
+                    },
+                    {
+                        "name": "Vishu Festival",
+                        "description": "Enjoy the traditional New Year festival marked by lights and traditional meals.",
+                        "image": "images/chembra_peak.jpg",
+                        "location": " "
+                    },
+                    {
+                        "name": "Beach Festival Ground",
+                        "description": "A vibrant ritualistic art form celebrated in temples.",
+                        "image": "images/chembra_peak.jpg",
+                        "location": " "
+                    },
+                    {
+                        "name": "Kerala Literature festival",
+                        "description": "A thrilling boat race event held on the Punnamada Lake in Alappuzha.",
+                        "image": "images/chembra_peak.jpg",
+                        "location": " "
+                    }
+                ]
+            }
+        ]
+    },
+    "sad": {
+        "intro_message": "Feeling a little low? How about visiting some calming and uplifting spots in Kerala to lift your spirits? Choose a  category that resonates with you.",
+        "categories": [
+            {
+                "name": "Nature Retreats",
+                "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_T1yN31rnlAUsD14XQP2Win7rbm2ecwykOw&s",
+                "options": [
+                    {
+                        "name": "Kakkadampoyil",
+                        "description": "Kakkadampoyil is a picturesque village located in the Kozhikode district of Kerala, known for its scenic beauty and tranquil atmosphere. Situated in the Western Ghats, this place is famous for its lush green landscapes, rolling hills, and dense forests. It is an ideal destination for nature lovers and those seeking a peaceful retreat away from the hustle and bustle of urban life.",
+                        "image": "images/chembra_peak.jpg",
+                        "location": "https://maps.app.goo.gl/Z3NQUFE7fJGJ3X849"
+                    },
+                    {
+                        "name": "Thusharagiri Waterfalls",
+                        "description": "A beautiful waterfall located around 50km from kozhikode, offering scenic beauty and trekking opportunities.It's a popular spot for nature lovers and adventure seekers.",
+                        "image": "https://www.keralatourism.org/images/enchanting_kerala/large/thusharagiri20230608031615_1307_1.jpg",
+                        "location": "https://maps.app.goo.gl/NwqHkaSzVxSS8wrL7"
+                    },
+                    {
+                        "name": "Kadalundi Bird Sanctuary",
+                        "description": "Ideal for bird enthusiasts, with a wide variety of species to observe.",
+                        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr4prmx98L2RKouBnSLLHn40y-xpr8n_CU5A&s",
+                        "location": "https://maps.app.goo.gl/jrgNPKSzeiEY5mVj8"
+                    },
+                    {
+                        "name": "Konad Beach",
+                        "description": "Beaches are usually made of sand, tiny grains of rocks and minerals that have been worn down by constant pounding by wind and waves.",
+                        "image": "https://th-i.thgim.com/public/news/cities/kozhikode/b81un/article30696112.ece/alternates/LANDSCAPE_1200/31-KI-BEACH",
+                        "location": "https://maps.app.goo.gl/7WDrbqfVSq2E3o4o8"
+                    }
+                ]
+            },
+            {
+                "name": "Scenic beach",
+                "image": "https://static.toiimg.com/thumb/48538866.cms?resizemode=75&width=1200&height=900",
+                "options": [
+                    {
+                        "name": "Kappad Beach",
+                        "description": "The beach wher Vasco Da Gama landed in 1498, making the begining of the spice trade in kerala.jIt is less crowded and perfect for a relaxing day by th sea.",
+                        "image": "https://www.dtpckozhikode.com/uploads/picture_gallery/gallery_images/kappad-beach-park-kozhikodu-20230602163015499265.webp",
+                        "location": "https://maps.app.goo.gl/tNAbev3xyydestqU6"
+                    },
+                    {
+                        "name": "Chaliyam Beach",
+                        "description": "Chaliyam Beach, located opposite Beypore port in Kozhikode, Kerala, is a serene and picturesque beach known for its calm atmosphere, breathtaking sunsets, and opportunities for relaxation and rejuvenation.",
+                        "image": "https://www.keralatourism.org/_next/image/?url=http%3A%2F%2F127.0.0.1%2Fktadmin%2Fimg%2Fpages%2Flarge-desktop%2Fchaliyam-beach-kozhikode-1727360170_563c3388dfa471a245df.webp&w=1920&q=75",
+                        "location": "https://maps.app.goo.gl/KCz3CQeaQZX9M6bD9"
+                    },
+                    {
+                        "name": "Payyoli Beach",
+                        "description": "Payyoli Beach, a popular spot in Kozhikode, Kerala, is known for its golden sands, shallow waters ideal for swimming and water sports, and swaying palm trees, making it a serene and attractive destination.",
+                        "image": "https://www.dtpckozhikode.com/uploads/picture_gallery/gallery_images/payyoli-beach-1-20230509170556633448.webp",
+                        "location": "https://maps.app.goo.gl/prnH9iYbBA6z3S257"
+                    },
+                    {
+                        "name": "Konad Beach",
+                        "description": "Beaches are usually made of sand, tiny grains of rocks and minerals that have been worn down by constant pounding by wind and waves.",
+                        "image": "https://th-i.thgim.com/public/news/cities/kozhikode/b81un/article30696112.ece/alternates/LANDSCAPE_1200/31-KI-BEACH",
+                        "location": "https://maps.app.goo.gl/7WDrbqfVSq2E3o4o8"
+                    }
+                ]
+            },
+            {
+                "name": "Spiritual and Uplifting Places",
+                "image": "https://www.savaari.com/blog/wp-content/uploads/2024/03/elephants-in-thrissur-pooram.webp",
+                "options": [
+                    {
+                        "name": "Tali Urban Heritage Core",
+                        "description": "The Tali Urban Heritage Core is a cultural and historical precinct located in the heart of Kozhikode.",
+                        "image": "https://www.dtpckozhikode.com/uploads/picture_gallery/gallery_images/thali-temple-kozhikode-1920x1080-20230510151114632806.webp",
+                        "location": "https://maps.app.goo.gl/qoE4vCDi3TzDoUNaA"
+                    },
+                    {
+                        "name": "Mishkal Mosque",
+                        "description": "Mishkal mosque, the four-storeyed mosque situated in Kuttichira, has a history of more than 650 years. It is named after Nakhooda Mishkal, an Arab trader who built this structure.",
+                        "image": "https://www.dtpckozhikode.com/uploads/picture_gallery/gallery_images/mishkal-masjid-1920x1080-20230510150947112419.webp",
+                        "location": "https://maps.app.goo.gl/bDFE9FjEq1FT6PeTA"
+                    },
+                    {
+                        "name": "St. Mary's Church Kozhokode",
+                        "description": "a historical church in Kozhikode, Kerala, built by the British in 1860 to serve the spiritual needs of British military personnel and Christian members of the collectorate.",
+                        "image": "https://www.dtpckozhikode.com/uploads/picture_gallery/gallery_images/english-pally-kozhikode-20230509164339174131.webp",
+                        "location": "https://maps.app.goo.gl/vKigsQqFhU2ZAdSD9"
+                    },
+                    {
+                        "name": " Tali Mahadeva Temple",
+                        "description": "This ancient Shiva temple, located in the heart of Kozhikode, is one of the oldest and most venerated in Kerala, holding significant religious and historical importance. ",
+                        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/76/88/a4/img-20180904-074513-largejpg.jpg?w=1200&h=1200&s=1",
+                        "location": "https://maps.app.goo.gl/Sn4DsE5bhpJfQPph7"
+                    }
+                ]
+            },
+            {
+                "name": "Calm Waterways",
+                "image": "https://cdn.malabarnews.com/wp-content/uploads/2021/04/29182137/iruvazhinjipuzha-tourism-project.jpg",
+                "options": [
+                    {
+                        "name": "Akalapuzha River",
+                        "description": "Flowing as a distributary of Korapuzha from Kanayankodu in Koyilandy, Akalapuzha flows northwest to meet the Kuttiyadipuzha at Payyoli Chirp",
+                        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWdSxd1Unez7-MqN23Et-YyOuq5z8dFrhISA&s",
+                        "location": "https://maps.app.goo.gl/AR4Y9UddaJi3i7qu8"
+                    },
+                    {
+                        "name": "Iruvanjippuzha River",
+                        "description": "Iruvazhanjippuzha, or Iruvanjipuzha, is a major tributary of River Chaliyar and joining to Chaliyar at Koolimadu near Cheruvadi. ",
+                        "image": "https://cdn.malabarnews.com/wp-content/uploads/2021/04/29182137/iruvazhinjipuzha-tourism-project.jpg",
+                        "location": "https://maps.app.goo.gl/fseLC3MJY5tNtuxdA"
+                    },
+                    {
+                        "name": "Kallayi River",
+                        "description": "It is linked to the Chaliyar by a man-made canal on the south side of the small timber village of Kallayi lying on its banks.",
+                        "image": "https://www.dtpckozhikode.com/uploads/picture_gallery/gallery_images/kallai-river-timber-transportation-20230509164722561924.webp",
+                        "location": "https://maps.app.goo.gl/vjRAQHNXeZmToQoP7"
+                    },
+                    {
+                        "name": "Chaliyar River",
+                        "description": "Ideal for quiet and scenic moments, also the site of the Nehru Trophy Boat Race.",
+                        "image": "https://maps.app.goo.gl/q1nNMcBszodDyoEf9",
+                        "location": "https://maps.app.goo.gl/q1nNMcBszodDyoEf9"
+                    }
+                ]
+            },
+            {
+                "name": "Relaxing Hill Stations",
+                "image": "https://flycnn.com/wp-content/uploads/2024/05/vayalada_kozhikode-1024x576.webp",
+                "options": [
+                    {
+                        "name": "Kakkadampoyil",
+                        "description": "Kakkadampoyil is a picturesque village located in the Kozhikode district of Kerala, known for its scenic beauty and tranquil atmosphere. Situated in the Western Ghats, this place is famous for its lush green landscapes, rolling hills, and dense forests. It is an ideal destination for nature lovers and those seeking a peaceful retreat away from the hustle and bustle of urban life.",
+                        "image": "images/chembra_peak.jpg",
+                        "location": "https://maps.app.goo.gl/Z3NQUFE7fJGJ3X849"
+                    },
+                    {
+                        "name": "Ponkunnu Hill Station",
+                        "description": "Ponkunnu Hill Station is located in the Kozhikode district of Kerala, India, and is known for its serene beauty and panoramic views.",
+                        "image": "https://cdn2.advanceinfotech.org/kozhikode.directory/1200x675/business/1380/ponkunnu-hill-base-3-1645856430.webp",
+                        "location": "https://maps.app.goo.gl/4rTHdo7zaEpNa8NG7"
+                    },
+                    {
+                        "name": "Ponparakunnu View Point",
+                        "description": "Ponparakunnu offers a serene retreat in the early hours, enveloped in mist and fog with a breathtaking green panorama.",
+                        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpxr-pT4PhqDHCcUGu4dSTRfQZfTkXBVEjIg&s",
+                        "location": "https://maps.app.goo.gl/mL2RpfC3zDe9UMj8A"
+                    },
+                    {
+                        "name": "Vayalada View Point",
+                        "description": "Vayalada Viewpoint in Kozhikode offers stunning hilltop views of the Western Ghats and surrounding valleys, making it a perfect spot for nature lovers.",
+                        "image": "https://flycnn.com/wp-content/uploads/2024/05/vayalada_kozhikode-1024x576.webp",
+                        "location": "https://maps.app.goo.gl/jpucPMhCCfzweWSd8"
+                    }
+                ]
+            }
+        ]
+    },
+    "neutral": {
+        "intro_message": "Looking for something interesting to do? Here are some balanced travel ideas across Kozhikode for you to enjoy a change of pace.",
+        "categories": [
+            {
+                "name": "Classic Tourist Spots",
+                "image": "https://static.toiimg.com/photo/msid-58490225,width-96,height-65.cms",
+                "options": [
+                    {
+                        "name": "Kozhikode Beach",
+                        "description": "The beach is renowned for its tranquil charm, with breathtaking sunset views that paint the sky in vivid shades of orange and pink. Gentle waves and a refreshing sea breeze create a peaceful ambiance, making it a favorite spot for leisurely walks, picnics, and unwinding from the city's bustle.",
+                        "image": "https://images.unsplash.com/photo-1654673285799-272434e0ef00?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                        "location": "https://maps.app.goo.gl/Y1GCSfFvhprRu2Gp7"
+                    },
+                    {
+                        "name": "Kappad Beach",
+                        "description": "The beach wher Vasco Da Gama landed in 1498, making the begining of the spice trade in kerala.jIt is less crowded and perfect for a relaxing day by th sea.",
+                        "image": "https://www.dtpckozhikode.com/uploads/picture_gallery/gallery_images/kappad-beach-park-kozhikodu-20230602163015499265.webp",
+                        "location": "https://maps.app.goo.gl/tNAbev3xyydestqU6"
+                    },
+                    {
+                        "name": "Mananchira Square",
+                        "description": "A historic square in the heart of kozhikode city, with a large pond and surounding gardens.It is perfect for a peaceful walk or a picnic.",
+                        "image": "https://www.dtpckozhikode.com/uploads/picture_gallery/gallery_images/mananchira-20230509170414337277.webp",
+                        "location": "https://maps.app.goo.gl/XTXCBcb1bCvWrppz6"
+                    },
+                    {
+                        "name": "Thusharagiri Waterfalls",
+                        "description": "A beautiful waterfall located around 50km from kozhikode, offering scenic beauty and trekking opportunities.It's a popular spot for nature lovers and adventure seekers.",
+                        "image": "https://www.keralatourism.org/images/enchanting_kerala/large/thusharagiri20230608031615_1307_1.jpg",
+                        "location": "https://maps.app.goo.gl/NwqHkaSzVxSS8wrL7"
+                    }
+                ]
+            },
+            {
+                "name": "Cultural Heritage and History",
+                "image": "https://www.savaari.com/blog/wp-content/uploads/2024/03/elephants-in-thrissur-pooram.webp",
+                "options": [
+                    {
+                        "name": "Pazhassi Raja Archaeological Museum",
+                        "description": "Is dedicated to preserving the region's rich historical and cultural heritage.",
+                        "image": "https://www.dtpckozhikode.com/uploads/picture_gallery/gallery_images/pazhassi_raja_museum_and_art_gallery-20230510150747488970.webp",
+                        "location": "https://maps.app.goo.gl/q4r6jaW1pt2nZXXb7"
+                    },
+                    {
+                        "name": "Kuttichira Heritage Conservation Project",
+                        "description": "The Kuttichira Heritage Conservation Project is an initiative aimed at preserving the historical and cultural heritage of the Kuttichira area in Kozhikode.",
+                        "image": "https://th-i.thgim.com/public/incoming/ssufbu/article65275106.ece/alternates/LANDSCAPE_1200/80692_29_3_2022_18_34_51_2_30TVKZKUTTICHIRA1.JPG",
+                        "location": "https://maps.app.goo.gl/BSspPpQKopKmRjxU6"
+                    },
+                    {
+                        "name": "Tali Urban Heritage Core",
+                        "description": "The Tali Urban Heritage Core is a cultural and historical precinct located in the heart of Kozhikode.",
+                        "image": "https://www.dtpckozhikode.com/uploads/picture_gallery/gallery_images/thali-temple-kozhikode-1920x1080-20230510151114632806.webp",
+                        "location": "https://maps.app.goo.gl/qoE4vCDi3TzDoUNaA"
+                    },
+                    {
+                        "name": "Mishkal Mosque",
+                        "description": "Mishkal mosque, the four-storeyed mosque situated in Kuttichira, has a history of more than 650 years. It is named after Nakhooda Mishkal, an Arab trader who built this structure.",
+                        "image": "https://www.dtpckozhikode.com/uploads/picture_gallery/gallery_images/mishkal-masjid-1920x1080-20230510150947112419.webp",
+                        "location": "https://maps.app.goo.gl/bDFE9FjEq1FT6PeTA"
+                    }
+                ]
+            },
+            {
+                "name": "Scenic Nature Spots",
+                "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_T1yN31rnlAUsD14XQP2Win7rbm2ecwykOw&s",
+                "options": [
+                    {
+                        "name": " Kadalundi Mangrove Forests",
+                        "description": "Mangrove forests are coastal ecosystems that are found in tropical and subtropical regions, characterized by salt-tolerant trees and shrubs.",
+                        "image": "https://content3.jdmagicbox.com/comp/kozhikode/f7/0495px495.x495.170607185056.w7f7/catalogue/green-island-tourism-kadalundi-kadalundi-kozhikode-tourist-attraction-vcfbr55cwa.jpg",
+                        "location": "https://maps.app.goo.gl/We9RBM7SF4RM7cWU9"
+                    },
+                    {
+                        "name": "Mavoor wetlands",
+                        "description": "Mavoor Wetlands are a tranquil expanse of marshy lands that offer a peaceful retreat for nature enthusiasts.",
+                        "image": "https://indiano.travel/wp-content/uploads/2024/12/Mavoor-Wetlands.jpg",
+                        "location": "https://maps.app.goo.gl/scNLbk9G9prwsfiQ8"
+                    },
+                    {
+                        "name": "Sarovaram Biopark",
+                        "description": "is an eco-tourism destination dedicated to the conservation of wetlands and mangrove ecosystems.",
+                        "image": "https://www.dtpckozhikode.com/uploads/picture_gallery/gallery_images/water-museum-and-biopark-in-kozhikde-1-20230509172608669315.webp",
+                        "location": "https://maps.app.goo.gl/Eg1peXFC7gS1B4xU6"
+                    },
+                    {
+                        "name": "Mananchira Square",
+                        "description": "Is a beautiful park built around the historic Mananchira Tank, a rectangular freshwater pond that dates back to the 14th century.",
+                        "image": "https://www.dtpckozhikode.com/uploads/picture_gallery/gallery_images/mananchira-20230509170414337277.webp",
+                        "location": "https://maps.app.goo.gl/XTXCBcb1bCvWrppz6"
+                    }
+                ]
+            },
+            {
+                "name": "Beaches and Coastal Areas",
+                "image": "https://static.toiimg.com/thumb/48538866.cms?resizemode=75&width=1200&height=900",
+                "options": [
+                    {
+                        "name": "Kozhikode Beach",
+                        "description": "The beach is renowned for its tranquil charm, with breathtaking sunset views that paint the sky in vivid shades of orange and pink. Gentle waves and a refreshing sea breeze create a peaceful ambiance, making it a favorite spot for leisurely walks, picnics, and unwinding from the city's bustle.",
+                        "image": "https://images.unsplash.com/photo-1654673285799-272434e0ef00?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                        "location": "https://maps.app.goo.gl/Y1GCSfFvhprRu2Gp7"
+                    },
+                    {
+                        "name": "Chaliyam Beach",
+                        "description": "Chaliyam Beach, located opposite Beypore port in Kozhikode, Kerala, is a serene and picturesque beach known for its calm atmosphere, breathtaking sunsets, and opportunities for relaxation and rejuvenation.",
+                        "image": "https://www.keralatourism.org/_next/image/?url=http%3A%2F%2F127.0.0.1%2Fktadmin%2Fimg%2Fpages%2Flarge-desktop%2Fchaliyam-beach-kozhikode-1727360170_563c3388dfa471a245df.webp&w=1920&q=75",
+                        "location": "https://maps.app.goo.gl/KCz3CQeaQZX9M6bD9"
+                    },
+                    {
+                        "name": "Payyoli Beach",
+                        "description": "Payyoli Beach, a popular spot in Kozhikode, Kerala, is known for its golden sands, shallow waters ideal for swimming and water sports, and swaying palm trees, making it a serene and attractive destination.",
+                        "image": "https://www.dtpckozhikode.com/uploads/picture_gallery/gallery_images/payyoli-beach-1-20230509170556633448.webp",
+                        "location": "https://maps.app.goo.gl/prnH9iYbBA6z3S257"
+                    },
+                    {
+                        "name": "Konad Beach",
+                        "description": "Beaches are usually made of sand, tiny grains of rocks and minerals that have been worn down by constant pounding by wind and waves.",
+                        "image": "https://th-i.thgim.com/public/news/cities/kozhikode/b81un/article30696112.ece/alternates/LANDSCAPE_1200/31-KI-BEACH",
+                        "location": "https://maps.app.goo.gl/7WDrbqfVSq2E3o4o8"
+                    }
+                ]
+            }
+        ]
+    },
+    "disgust": {
+        "intro_message": "Looking for something interesting to do? Here are some balanced travel ideas across Kozhikode for you to enjoy a change of pace.",
+        "categories": [
+            {
+                "name": "Classic Tourist Spots",
+                "image": "https://static.toiimg.com/photo/msid-58490225,width-96,height-65.cms",
+                "options": [
+                    {
+                        "name": "Kozhikode Beach",
+                        "description": "The beach is renowned for its tranquil charm, with breathtaking sunset views that paint the sky in vivid shades of orange and pink. Gentle waves and a refreshing sea breeze create a peaceful ambiance, making it a favorite spot for leisurely walks, picnics, and unwinding from the city's bustle.",
+                        "image": "https://images.unsplash.com/photo-1654673285799-272434e0ef00?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                        "location": "https://maps.app.goo.gl/Y1GCSfFvhprRu2Gp7"
+                    },
+                    {
+                        "name": "Kappad Beach",
+                        "description": "The beach wher Vasco Da Gama landed in 1498, making the begining of the spice trade in kerala.jIt is less crowded and perfect for a relaxing day by th sea.",
+                        "image": "https://www.dtpckozhikode.com/uploads/picture_gallery/gallery_images/kappad-beach-park-kozhikodu-20230602163015499265.webp",
+                        "location": "https://maps.app.goo.gl/tNAbev3xyydestqU6"
+                    },
+                    {
+                        "name": "Mananchira Square",
+                        "description": "A historic square in the heart of kozhikode city, with a large pond and surounding gardens.It is perfect for a peaceful walk or a picnic.",
+                        "image": "https://www.dtpckozhikode.com/uploads/picture_gallery/gallery_images/mananchira-20230509170414337277.webp",
+                        "location": "https://maps.app.goo.gl/XTXCBcb1bCvWrppz6"
+                    },
+                    {
+                        "name": "Thusharagiri Waterfalls",
+                        "description": "A beautiful waterfall located around 50km from kozhikode, offering scenic beauty and trekking opportunities.It's a popular spot for nature lovers and adventure seekers.",
+                        "image": "https://www.keralatourism.org/images/enchanting_kerala/large/thusharagiri20230608031615_1307_1.jpg",
+                        "location": "https://maps.app.goo.gl/NwqHkaSzVxSS8wrL7"
+                    }
+                ]
+            },
+            {
+                "name": "Cultural Heritage and History",
+                "image": "https://www.savaari.com/blog/wp-content/uploads/2024/03/elephants-in-thrissur-pooram.webp",
+                "options": [
+                    {
+                        "name": "Pazhassi Raja Archaeological Museum",
+                        "description": "Is dedicated to preserving the region's rich historical and cultural heritage.",
+                        "image": "https://www.dtpckozhikode.com/uploads/picture_gallery/gallery_images/pazhassi_raja_museum_and_art_gallery-20230510150747488970.webp",
+                        "location": "https://maps.app.goo.gl/q4r6jaW1pt2nZXXb7"
+                    },
+                    {
+                        "name": "Kuttichira Heritage Conservation Project",
+                        "description": "The Kuttichira Heritage Conservation Project is an initiative aimed at preserving the historical and cultural heritage of the Kuttichira area in Kozhikode.",
+                        "image": "https://th-i.thgim.com/public/incoming/ssufbu/article65275106.ece/alternates/LANDSCAPE_1200/80692_29_3_2022_18_34_51_2_30TVKZKUTTICHIRA1.JPG",
+                        "location": "https://maps.app.goo.gl/BSspPpQKopKmRjxU6"
+                    },
+                    {
+                        "name": "Tali Urban Heritage Core",
+                        "description": "The Tali Urban Heritage Core is a cultural and historical precinct located in the heart of Kozhikode.",
+                        "image": "https://www.dtpckozhikode.com/uploads/picture_gallery/gallery_images/thali-temple-kozhikode-1920x1080-20230510151114632806.webp",
+                        "location": "https://maps.app.goo.gl/qoE4vCDi3TzDoUNaA"
+                    },
+                    {
+                        "name": "Mishkal Mosque",
+                        "description": "Mishkal mosque, the four-storeyed mosque situated in Kuttichira, has a history of more than 650 years. It is named after Nakhooda Mishkal, an Arab trader who built this structure.",
+                        "image": "https://www.dtpckozhikode.com/uploads/picture_gallery/gallery_images/mishkal-masjid-1920x1080-20230510150947112419.webp",
+                        "location": "https://maps.app.goo.gl/bDFE9FjEq1FT6PeTA"
+                    }
+                ]
+            },
+            {
+                "name": "Scenic Nature Spots",
+                "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_T1yN31rnlAUsD14XQP2Win7rbm2ecwykOw&s",
+                "options": [
+                    {
+                        "name": " Kadalundi Mangrove Forests",
+                        "description": "Mangrove forests are coastal ecosystems that are found in tropical and subtropical regions, characterized by salt-tolerant trees and shrubs.",
+                        "image": "https://content3.jdmagicbox.com/comp/kozhikode/f7/0495px495.x495.170607185056.w7f7/catalogue/green-island-tourism-kadalundi-kadalundi-kozhikode-tourist-attraction-vcfbr55cwa.jpg",
+                        "location": "https://maps.app.goo.gl/We9RBM7SF4RM7cWU9"
+                    },
+                    {
+                        "name": "Mavoor wetlands",
+                        "description": "Mavoor Wetlands are a tranquil expanse of marshy lands that offer a peaceful retreat for nature enthusiasts.",
+                        "image": "https://indiano.travel/wp-content/uploads/2024/12/Mavoor-Wetlands.jpg",
+                        "location": "https://maps.app.goo.gl/scNLbk9G9prwsfiQ8"
+                    },
+                    {
+                        "name": "Sarovaram Biopark",
+                        "description": "is an eco-tourism destination dedicated to the conservation of wetlands and mangrove ecosystems.",
+                        "image": "https://www.dtpckozhikode.com/uploads/picture_gallery/gallery_images/water-museum-and-biopark-in-kozhikde-1-20230509172608669315.webp",
+                        "location": "https://maps.app.goo.gl/Eg1peXFC7gS1B4xU6"
+                    },
+                    {
+                        "name": "Mananchira Square",
+                        "description": "Is a beautiful park built around the historic Mananchira Tank, a rectangular freshwater pond that dates back to the 14th century.",
+                        "image": "https://www.dtpckozhikode.com/uploads/picture_gallery/gallery_images/mananchira-20230509170414337277.webp",
+                        "location": "https://maps.app.goo.gl/XTXCBcb1bCvWrppz6"
+                    }
+                ]
+            },
+            {
+                "name": "Beaches and Coastal Areas",
+                "image": "https://static.toiimg.com/thumb/48538866.cms?resizemode=75&width=1200&height=900",
+                "options": [
+                    {
+                        "name": "Kozhikode Beach",
+                        "description": "The beach is renowned for its tranquil charm, with breathtaking sunset views that paint the sky in vivid shades of orange and pink. Gentle waves and a refreshing sea breeze create a peaceful ambiance, making it a favorite spot for leisurely walks, picnics, and unwinding from the city's bustle.",
+                        "image": "https://images.unsplash.com/photo-1654673285799-272434e0ef00?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                        "location": "https://maps.app.goo.gl/Y1GCSfFvhprRu2Gp7"
+                    },
+                    {
+                        "name": "Chaliyam Beach",
+                        "description": "Chaliyam Beach, located opposite Beypore port in Kozhikode, Kerala, is a serene and picturesque beach known for its calm atmosphere, breathtaking sunsets, and opportunities for relaxation and rejuvenation.",
+                        "image": "https://www.keralatourism.org/_next/image/?url=http%3A%2F%2F127.0.0.1%2Fktadmin%2Fimg%2Fpages%2Flarge-desktop%2Fchaliyam-beach-kozhikode-1727360170_563c3388dfa471a245df.webp&w=1920&q=75",
+                        "location": "https://maps.app.goo.gl/KCz3CQeaQZX9M6bD9"
+                    },
+                    {
+                        "name": "Payyoli Beach",
+                        "description": "Payyoli Beach, a popular spot in Kozhikode, Kerala, is known for its golden sands, shallow waters ideal for swimming and water sports, and swaying palm trees, making it a serene and attractive destination.",
+                        "image": "https://www.dtpckozhikode.com/uploads/picture_gallery/gallery_images/payyoli-beach-1-20230509170556633448.webp",
+                        "location": "https://maps.app.goo.gl/prnH9iYbBA6z3S257"
+                    },
+                    {
+                        "name": "Konad Beach",
+                        "description": "Beaches are usually made of sand, tiny grains of rocks and minerals that have been worn down by constant pounding by wind and waves.",
+                        "image": "https://th-i.thgim.com/public/news/cities/kozhikode/b81un/article30696112.ece/alternates/LANDSCAPE_1200/31-KI-BEACH",
+                        "location": "https://maps.app.goo.gl/7WDrbqfVSq2E3o4o8"
+                    }
+                ]
+            }
+        ]
+    }
+}

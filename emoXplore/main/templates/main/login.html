@@ -1,0 +1,93 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login Modal</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        />
+        <link rel="stylesheet" href="{% static 'styles/login.css'%}" />
+    </head>
+    <body>
+        <div class="container">
+            {% if messages %}
+                <script>
+                    {% for message in messages %}
+                        alert("{{ message }}");
+                    {% endfor %}
+                </script>
+            {% endif %}
+        </div>
+        <!-- Login model -->
+        <div class="modal" id="loginModal">
+            <div class="modal-content">
+                <h2>Log in</h2>
+                <p>
+                    New user?
+                    <a
+                        href="{% url 'register'%}"
+                        style="color: #3498db; text-decoration: none"
+                        >Register Now</a
+                    >
+                </p>
+                <button
+                    class="btn-g"
+                    style="
+                        background: white;
+                        border: 1px solid #ccc;
+                        font-weight: bold;
+                        width: 96%;
+                    "
+                >
+                    <i class="fa-brands fa-google"></i> Continue with
+                    <span style="color: rgb(48, 150, 27)">Google</span>
+                </button>
+
+                <p style="margin: 10px">or</p>
+                <form method="post">
+                    {% csrf_token %}
+                    <input
+                        type="text"
+                        class="input-field"
+                        placeholder="Username"
+                        name="username"
+                    />
+                    <input
+                        type="password"
+                        class="input-field"
+                        placeholder="Enter Password"
+                        name="password"
+                    />
+                    <div
+                        style="
+                            display: flex;
+                            justify-content: space-between;
+                            font-size: 14px;
+                        "
+                    >
+                        <label
+                            ><input type="checkbox" name="remember_me" />
+                            Remember me</label
+                        >
+                        <a
+                            href="#"
+                            style="color: #e74c3c; text-decoration: none"
+                            >Forgot Password?</a
+                        >
+                    </div>
+                    <button class="login-btn">Sign In</button>
+                </form>
+
+                <p class="bottom-text">
+                    By creating this account, you agree to our
+                    <a href="#" style="color: #3498db"
+                        >Privacy Policy & Cookie Policy</a
+                    >.
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
